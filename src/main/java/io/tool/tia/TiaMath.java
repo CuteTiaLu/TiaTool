@@ -2,7 +2,7 @@
  * 数学
  * Math
  *
- * @author deepseek
+ * @author deepseek(AI)
  * @since 2026-11-08
  */
 
