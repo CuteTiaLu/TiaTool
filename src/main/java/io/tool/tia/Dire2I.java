@@ -6,7 +6,7 @@
  * @since 2026-10-30
  */
 
-package io.tool;
+package io.tool.tia;
 
 public class Dire2I {
 

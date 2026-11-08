@@ -5,7 +5,7 @@
  * @author deepseek
  * @since 2026-11-08
  */
-package io.tool;
+package io.tool.tia;
 
 public final class Binary {
     public static boolean get(int value, int index) {

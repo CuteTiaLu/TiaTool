@@ -1,4 +1,4 @@
-package io.tool;
+package io.tool.tia;
 
 public class TiaMapList<V> {
 

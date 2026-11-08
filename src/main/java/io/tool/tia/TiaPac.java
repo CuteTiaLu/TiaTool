@@ -7,7 +7,7 @@
  * @author 天禄是小狗
  * @since 2026-11-08
  */
-package io.tool;
+package io.tool.tia;
 
 public class TiaPac<T> {
     public T data;

@@ -25,7 +25,7 @@
  * @since 2026-10-31
  */
 
-package io.tool;
+package io.tool.tia;
 
 import java.util.Arrays;
 

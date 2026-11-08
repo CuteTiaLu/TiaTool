@@ -6,7 +6,7 @@
  * @since 2026-11-08
  */
 
-package io.tool;
+package io.tool.tia;
 
 public final class TiaMath {
 

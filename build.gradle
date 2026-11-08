@@ -2,7 +2,8 @@ plugins {
     id "java"
 }
 
-group = "io.tool"
+group = "io.tool.tia"
+version = "0.1"
 
 repositories {
     mavenCentral()
