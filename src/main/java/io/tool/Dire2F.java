@@ -1,3 +1,11 @@
+/**
+ * 浮点数XY存储
+ * XY float Container
+ *
+ * @author 天禄是小狗
+ * @since 2026-11-8
+ */
+
 package io.tool;
 
 public class Dire2F {

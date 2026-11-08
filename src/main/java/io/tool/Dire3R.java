@@ -1,3 +1,11 @@
+/**
+ * 3D位置存储
+ * 3D Pos Container
+ *
+ * @author 天禄是小狗
+ * @since 2026-10-30
+ */
+
 package io.tool;
 
 public class Dire3R extends Dire3 {

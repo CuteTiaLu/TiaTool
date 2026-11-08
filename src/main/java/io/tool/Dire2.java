@@ -1,9 +1,12 @@
-package io.tool; /**
- * 2D坐标存储
+/**
+ * XY double 存储
+ * XY double Container
  *
  * @author 天禄是小狗
  * @since 2026-10-30
  */
+
+package io.tool;
 
 public class Dire2 {
 

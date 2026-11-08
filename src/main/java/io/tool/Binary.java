@@ -1,3 +1,10 @@
+/**
+ * 更容易操作二进制的工具
+ * A tool that's easier for handling binary
+ *
+ * @author deepseek
+ * @since 2026-11-08
+ */
 package io.tool;
 
 public final class Binary {

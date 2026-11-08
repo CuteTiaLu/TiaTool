@@ -1,11 +1,12 @@
-package io.tool;
-
 /**
- * 3D坐标存储
+ * XYZ double 存储
+ * XYZ double Container
  *
  * @author 天禄是小狗
  * @since 2026-10-30
  */
+
+package io.tool;
 
 public class Dire3 {
 

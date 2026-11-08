@@ -1,3 +1,11 @@
+/**
+ * XYZ float 存储
+ * XYZ float Container
+ *
+ * @author 天禄是小狗
+ * @since 2026-11-08
+ */
+
 package io.tool;
 
 public class Dire3F {

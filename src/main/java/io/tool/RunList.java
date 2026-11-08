@@ -1,9 +1,13 @@
 /**
  * 运行列表类
+ * Run-List
  * <p>
  * 专门用来运行节点或者其他的东西的特殊列表
- * 对比 列表类 增加了更多对实现 io.tool.RunInt 接口的对象的运行
- * 但是因为是专门为 io.tool.RunInt 接口制作所以只支持实现 io.tool.RunInt 的对象
+ * Run Obj(<T>) extends RunInt List class
+ * 对比 列表类 增加了更多对实现 RunInt 接口的对象的运行
+ * ContrastTiaList addRunInt on Run
+ * 但是因为是专门为 RunInt 接口制作所以只支持实现 RunInt 的对象
+ * but class is RunInt List so No (!extends RunInt)
  *
  * @author 天禄是小狗
  * @since 2026-10-31
@@ -14,29 +18,9 @@ package io.tool;
 public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
 
     /**
-     * 根据 size 创建初始大小为 size 的列表
-     * @param size 初始大小
+     * 渲染函数
+     * draw func
      */
-    public RunList(int size) {
-        super(size);
-    }
-
-    /**
-     * 默认的构造函数
-     * 创建一个大小为 defaultSize 的列表
-     */
-    public RunList() {
-        super();
-    }
-
-    /**
-     * 复制传入的列表而不是引用
-     * @param tiaList 要复制的列表
-     */
-    public RunList(TiaList<T> tiaList) {
-        super(tiaList);
-    }
-
     @Override
     public void _draw() {
         forEach((r) -> {
@@ -45,6 +29,12 @@ public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
         });
     }
 
+    /**
+     * 更新函数
+     * update func
+     *
+     * @param delta 增量时间:deltaTime
+     */
     @Override
     public void _update(double delta) {
         forEach((r) -> {
@@ -55,14 +45,18 @@ public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
 
     /**
      * 渲染回调
+     * drawHook
      * 每一个对象渲染时的回调
-     * @param run 对象
+     * Each Obj Run draw when Run
+     * @param run 对象:draw of Obj
      */
     public void drawHook(T run) {}
 
     /**
      * 更新回调
-     * 每一个对象运行时的回调
+     * updateHook
+     * 每一个对象更新时的回调
+     * Each Obj Run update when Run
      * @param run 对象
      * @param delta 时间
      */

@@ -1,3 +1,11 @@
+/**
+ * 数学
+ * Math
+ *
+ * @author deepseek
+ * @since 2026-11-08
+ */
+
 package io.tool;
 
 public final class TiaMath {

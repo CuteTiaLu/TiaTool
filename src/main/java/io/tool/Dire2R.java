@@ -1,3 +1,11 @@
+/**
+ * 2D坐标存储
+ * double 2D Pos Container
+ *
+ * @author 天禄是小狗
+ * @since 2026-10-30
+ */
+
 package io.tool;
 
 public class Dire2R extends Dire2 {
