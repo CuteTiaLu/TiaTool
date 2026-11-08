@@ -1,6 +1,15 @@
 plugins {
     id "java"
+    id "maven-publish"
 }
 
 group = "io.tool.tia"
 version = "0.1"
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+        }
+    }
+}
