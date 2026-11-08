@@ -21,12 +21,14 @@ public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
      * 渲染函数
      * draw func
      */
+    @SuppressWarnings("unchecked")
     @Override
     public void _draw() {
-        forEach((r) -> {
-            r._draw();
-            drawHook(r);
-        });
+        for (int i = 0; i < size; i++) {
+            T t = (T) lists[i];
+            t._draw();
+            drawHook(t);
+        }
     }
 
     /**
@@ -35,12 +37,14 @@ public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
      *
      * @param delta 增量时间:deltaTime
      */
+    @SuppressWarnings("unchecked")
     @Override
     public void _update(double delta) {
-        forEach((r) -> {
-            r._update(delta);
-            updHook(r, delta);
-        });
+        for (int i = 0; i < size; i++) {
+            T t = (T) lists[i];
+            t._update(delta);
+            updHook(t, delta);
+        }
     }
 
     /**
