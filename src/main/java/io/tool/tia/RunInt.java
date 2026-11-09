@@ -12,7 +12,6 @@ package io.tool.tia;
  * @author 天禄是小狗
  * @since 2026-10-31
  */
-
 public interface RunInt {
     /**
      * 渲染使用的函数

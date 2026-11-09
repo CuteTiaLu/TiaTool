@@ -1,3 +1,7 @@
+package io.tool.tia;
+
+import java.util.Arrays;
+
 /**
  * 列表类
  * List-Container
@@ -5,14 +9,14 @@
  * 一个通过游标和swap-remove管理内部数组的列表类
  * by Cursor and swap-remove Management List
  * 他不会保持排序
- * not Order
+ * Disorderly
  * 用不智能的方式管理一个列表
  * by No Smart(AI) Management List
  * 可以添加或者删除之类的
  * yes add or remove
  * <p>
  * 不建议自己编写各种方法的原理
- * @Override may cause bug
+ * Override may cause bug
  * 除非确认你有能力或者需要
  * but if you yes @Override
  * Let's go
@@ -21,14 +25,11 @@
  * PS: java的缓存命中率是个灾难
  * PS: Java's cache hit rate is a disaster.
  *
+ * @param <T> 类型:Type
+ *
  * @author 天禄是小狗
  * @since 2026-10-31
  */
-
-package io.tool.tia;
-
-import java.util.Arrays;
-
 public class TiaList<T> {
 
     /**

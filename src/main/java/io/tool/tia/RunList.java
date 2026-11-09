@@ -1,21 +1,32 @@
+package io.tool.tia;
+
 /**
  * 运行列表类
  * Run-List
  * <p>
  * 专门用来运行节点或者其他的东西的特殊列表
- * Run Obj(<T>) extends RunInt List class
+ * Run Obj(T) extends RunInt List class
  * 对比 列表类 增加了更多对实现 RunInt 接口的对象的运行
  * ContrastTiaList addRunInt on Run
  * 但是因为是专门为 RunInt 接口制作所以只支持实现 RunInt 的对象
  * but class is RunInt List so No (!extends RunInt)
  *
+ * @param <T> 类型:Type
+ *
  * @author 天禄是小狗
  * @since 2026-10-31
  */
-
-package io.tool.tia;
-
 public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
+
+    /**
+     * 默认的构造函数
+     * Default Constructor
+     * 创建一个大小为 defaultSize 的空列表
+     * new var defaultSize of List
+     */
+    public RunList() {
+        super();
+    }
 
     /**
      * 渲染函数
