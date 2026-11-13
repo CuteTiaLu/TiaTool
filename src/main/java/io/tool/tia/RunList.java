@@ -54,10 +54,10 @@ public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
     @Override
     public void _draw() {
         int size = this.size();
+        T[] t = (T[]) lists;
         for (int i = 0; i < size; i++) {
-            T t = (T) lists[i];
-            t._draw();
-            drawHook(t);
+            t[i]._draw();
+            drawHook(t[i]);
         }
     }
 
@@ -71,10 +71,10 @@ public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
     @Override
     public void _update(double delta) {
         int size = this.size();
+        T[] t = (T[]) lists;
         for (int i = 0; i < size; i++) {
-            T t = (T) lists[i];
-            t._update(delta);
-            updHook(t, delta);
+            t[i]._update(delta);
+            updHook(t[i], delta);
         }
     }
 
