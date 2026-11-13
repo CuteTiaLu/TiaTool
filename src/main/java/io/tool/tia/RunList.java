@@ -19,6 +19,15 @@ package io.tool.tia;
 public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
 
     /**
+     * 根据 size 创建初始大小为 size 的列表
+     * by var size new lists on length
+     * @param size 初始大小:lists.length
+     */
+    public RunList(int size) {
+        super(size);
+    }
+
+    /**
      * 默认的构造函数
      * Default Constructor
      * 创建一个大小为 defaultSize 的空列表
@@ -29,12 +38,22 @@ public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
     }
 
     /**
+     * 复制传入的列表而不是引用
+     * copy param tiaList
+     * @param tiaList 传入的列表:byCopyList
+     */
+    public RunList(TiaList<T> tiaList) {
+        super(tiaList);
+    }
+
+    /**
      * 渲染函数
      * draw func
      */
     @SuppressWarnings("unchecked")
     @Override
     public void _draw() {
+        int size = this.size();
         for (int i = 0; i < size; i++) {
             T t = (T) lists[i];
             t._draw();
@@ -51,6 +70,7 @@ public class RunList<T extends RunInt> extends TiaList<T> implements RunInt {
     @SuppressWarnings("unchecked")
     @Override
     public void _update(double delta) {
+        int size = this.size();
         for (int i = 0; i < size; i++) {
             T t = (T) lists[i];
             t._update(delta);
